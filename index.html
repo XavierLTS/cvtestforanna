@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en" class="is-loading">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ruike Wu — Screen Producing</title>
+<meta name="description" content="Ruike Wu — creative producing, cultural storytelling and screen practice. Portfolio of a Business of the Creative Industries undergraduate at the University of York." />
+<meta name="theme-color" content="#0b0a08" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230b0a08'/%3E%3Ctext x='50' y='70' font-family='Georgia,serif' font-size='56' fill='%23d6a953' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ░░ TEXTURE LAYERS ░░ -->
+<div class="grain" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<!-- ░░ CURSOR ░░ -->
+<div class="cursor" aria-hidden="true">
+  <div class="cursor__ring"></div>
+  <div class="cursor__dot"></div>
+  <span class="cursor__label"></span>
+</div>
+
+<!-- ░░ SCROLL PROGRESS ░░ -->
+<div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+<!-- ░░ PRELOADER ░░ -->
+<div class="loader" id="loader">
+  <div class="loader__grid" aria-hidden="true"></div>
+  <div class="loader__inner">
+    <div class="loader__row">
+      <div class="loader__mark">R<span>✳</span>W</div>
+      <div class="loader__meta">
+        <span>Screen Producing</span>
+        <span>Portfolio — Vol. 01</span>
+      </div>
+    </div>
+    <div class="loader__word" id="loaderWord">
+      <span>Producing</span>
+      <span>Storytelling</span>
+      <span>Screen Culture</span>
+      <span>Audience</span>
+    </div>
+    <div class="loader__foot">
+      <div class="loader__count"><span id="count">0</span><i>%</i></div>
+      <div class="loader__bar"><span id="bar"></span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ░░ HEADER ░░ -->
+<header class="head" id="head">
+  <a href="#top" class="head__brand" data-magnetic data-cursor>
+    <span class="head__dot"></span>
+    <span class="head__name">Ruike&nbsp;Wu</span>
+  </a>
+  <nav class="head__nav" aria-label="Primary">
+    <a href="#profile" data-cursor><i>01</i><b>Profile</b></a>
+    <a href="#experience" data-cursor><i>02</i><b>Work</b></a>
+    <a href="#capabilities" data-cursor><i>03</i><b>Skills</b></a>
+    <a href="#research" data-cursor><i>04</i><b>Research</b></a>
+  </nav>
+  <a href="#contact" class="head__cta" data-magnetic data-cursor>
+    <span>Contact</span>
+    <span class="head__clock"><i class="ping"></i><em id="clock">––:––</em></span>
+  </a>
+</header>
+
+<main id="top">
+
+  <!-- ░░ HERO ░░ -->
+  <section class="hero" id="hero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="hero__ghost" aria-hidden="true" data-parallax data-speed="0.1">2026</div>
+
+    <div class="hero__top">
+      <span class="hero__edge reveal">Screen Producing Applicant</span>
+      <span class="hero__edge reveal">York · United Kingdom</span>
+      <span class="hero__edge reveal">Portfolio — Vol. 01 / MMXXVI</span>
+    </div>
+
+    <div class="hero__head">
+      <h1 class="hero__name" aria-label="Ruike Wu">
+        <span class="mline"><span class="mline" data-delay="0">Ruike</span></span>
+        <span class="mline"><span class="mline" data-delay="1">Wu<em class="hero__star">✳</em></span></span>
+      </h1>
+      <p class="hero__lead reveal">
+        Creative producing at the meeting point of <em>creative ideas</em>,
+        practical structure and <em>audience experience</em> — turning
+        intention into screen work that travels.
+      </p>
+    </div>
+
+    <div class="hero__gallery">
+      <figure class="hero__shot" data-parallax data-speed="0.05" data-cursor>
+        <div class="hero__shotimg"><img src="assets/crew.png" alt="On a film set at golden hour" /></div>
+        <figcaption><i>01</i> On Set</figcaption>
+      </figure>
+      <figure class="hero__shot hero__shot--tall" data-parallax data-speed="0.13" data-cursor>
+        <div class="hero__shotimg"><img src="assets/cinema.png" alt="A private screening room" /></div>
+        <figcaption><i>02</i> The Audience</figcaption>
+      </figure>
+      <figure class="hero__shot" data-parallax data-speed="0.04" data-cursor>
+        <div class="hero__shotimg"><img src="assets/calligraphy.png" alt="Chinese calligraphy" /></div>
+        <figcaption><i>03</i> The Craft</figcaption>
+      </figure>
+    </div>
+
+    <div class="hero__base">
+      <div class="hero__tags reveal">
+        <span>Creative Producing</span>
+        <span>Cultural Storytelling</span>
+        <span>Screen Practice</span>
+      </div>
+      <a href="#intro" class="hero__scroll" data-cursor aria-label="Scroll to content">
+        <span class="hero__scrolltxt">Scroll to begin</span>
+        <span class="hero__scrollbar"><b></b></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ░░ MARQUEE ░░ -->
+  <div class="marquee" aria-hidden="true" data-marquee>
+    <div class="marquee__track">
+      <span>Producing<i>✳</i>Cultural Storytelling<i>✳</i>Screen Practice<i>✳</i>Cross-Cultural<i>✳</i>Audience Engagement<i>✳</i>Film Research<i>✳</i>Cultural Programming<i>✳</i></span>
+      <span>Producing<i>✳</i>Cultural Storytelling<i>✳</i>Screen Practice<i>✳</i>Cross-Cultural<i>✳</i>Audience Engagement<i>✳</i>Film Research<i>✳</i>Cultural Programming<i>✳</i></span>
+    </div>
+  </div>
+
+  <!-- ░░ INTRO / MANIFESTO ░░ -->
+  <section class="intro" id="intro">
+    <span class="tag reveal">(✳) — Manifesto</span>
+    <p class="intro__text" data-highlight>
+      I work in the space between a creative idea and the audience it is made for —
+      producing, coordinating and researching screen work that stays legible,
+      resonant and worth watching as it travels across cultures.
+    </p>
+    <div class="intro__foot reveal">
+      <span>Ruike Wu</span>
+      <span>BA Business of the Creative Industries</span>
+      <span>University of York</span>
+    </div>
+  </section>
+
+  <!-- ░░ 01 · PROFILE ░░ -->
+  <section class="sec sec--light" id="profile">
+    <div class="sec__head">
+      <span class="tag reveal">(01) — Profile</span>
+      <h2 class="sec__title">
+        <span class="mline"><span>A producer who holds</span></span>
+        <span class="mline"><span>the space between <em>vision</em></span></span>
+        <span class="mline"><span>and <em>delivery</em>.</span></span>
+      </h2>
+    </div>
+
+    <div class="profile">
+      <div class="profile__media">
+        <figure class="portrait reveal" data-tilt>
+          <div class="portrait__frame">
+            <img src="assets/selfie.jpg" alt="Portrait of Ruike Wu" />
+            <span class="portrait__scan" aria-hidden="true"></span>
+          </div>
+          <figcaption>
+            <span>Ruike Wu</span>
+            <span>York · MMXXVI</span>
+          </figcaption>
+        </figure>
+        <ul class="facts">
+          <li class="reveal"><i>Study</i><b>BA Business of the Creative Industries</b></li>
+          <li class="reveal"><i>Institution</i><b>University of York</b></li>
+          <li class="reveal"><i>Graduating</i><b>Expected 2026</b></li>
+          <li class="reveal"><i>Languages</i><b>Mandarin · English — Bilingual</b></li>
+        </ul>
+      </div>
+
+      <div class="profile__text">
+        <p class="profile__big" data-highlight-dark>
+          I am a final-year undergraduate in the Business of the Creative Industries
+          at the University of York, working across screen production, event
+          coordination, cultural programming, visual content and film research.
+        </p>
+        <div class="profile__cols">
+          <p class="reveal">My focus is screen producing — connecting creative ideas with the practical structure that delivers them, and keeping audience experience in view at every stage. I am most useful in the space between a director's intention and the workflow, communication and scheduling that carry a project from brief to screening.</p>
+          <p class="reveal">I am particularly drawn to Chinese and Asian screen cultures, cross-cultural storytelling and international audience engagement — how stories are made legible, circulated and received as they move between contexts. My work consistently returns to one question: how does creative work reach, and resonate with, the people it is made for?</p>
+        </div>
+        <div class="profile__sign reveal">
+          <span class="profile__signlabel">Relevant areas</span>
+          <div class="chips">
+            <b data-cursor>Film &amp; Television</b><b data-cursor>Screen Culture</b><b data-cursor>Production Practice</b><b data-cursor>Audience Research</b><b data-cursor>Marketing</b><b data-cursor>Finance</b><b data-cursor>Law</b>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ PINNED CINEMA SEQUENCE ░░ -->
+  <section class="pin" id="screen" data-pin>
+    <div class="pin__sticky">
+      <figure class="pin__media" data-pin-media>
+        <img src="assets/cinema.png" alt="A private screening room" />
+        <div class="pin__shade"></div>
+      </figure>
+      <div class="pin__copy">
+        <span class="pin__kicker" data-pin-copy>Every decision serves —</span>
+        <h2 class="pin__head" data-pin-copy>One&nbsp;question<em>.</em></h2>
+        <span class="pin__rule" data-pin-copy aria-hidden="true"></span>
+        <p class="pin__q" data-pin-copy>Does this <em>reach</em> the people it is <em>made&nbsp;for?</em></p>
+        <span class="pin__cue" data-pin-copy>Keep scrolling</span>
+      </div>
+      <span class="pin__count" data-pin-count aria-hidden="true">00</span>
+    </div>
+  </section>
+
+  <!-- ░░ 02 · EXPERIENCE ░░ -->
+  <section class="sec sec--exp" id="experience">
+    <div class="sec__head">
+      <span class="tag reveal">(02) — Selected Experience</span>
+      <h2 class="sec__title">
+        <span class="mline"><span>Work that built</span></span>
+        <span class="mline"><span>the <em>craft</em>.</span></span>
+      </h2>
+    </div>
+
+    <div class="exp" id="exp">
+
+      <article class="exp__item is-open" data-cursor="expand">
+        <button class="exp__bar" type="button">
+          <span class="exp__no">01</span>
+          <span class="exp__head">
+            <span class="exp__title">48-Hour Sustainable Film Challenge</span>
+            <span class="exp__role">Event Coordinator · Organiser &amp; Participant</span>
+          </span>
+          <span class="exp__year">2026</span>
+          <span class="exp__icon" aria-hidden="true"></span>
+        </button>
+        <div class="exp__body">
+          <div class="exp__bodyin">
+            <div class="exp__text">
+              <p class="exp__sum">A studio-led production sprint translating industry-standard sustainable screen practice into a student production context.</p>
+              <ul class="exp__list">
+                <li>Coordinated participant communication, workflow planning, briefing preparation, submission reminders and screening preparation.</li>
+                <li>Explored how industry-standard sustainable screen practices could be translated into a student production context.</li>
+                <li>Participated as a filmmaker to evaluate the participant journey and identify improvements for future editions.</li>
+              </ul>
+              <div class="exp__meta"><span>Studio Production</span><span>University of York</span></div>
+            </div>
+            <figure class="exp__media" data-tilt>
+              <img src="assets/desk.png" alt="Production planning desk" loading="lazy" />
+            </figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="exp__item" data-cursor="expand">
+        <button class="exp__bar" type="button">
+          <span class="exp__no">02</span>
+          <span class="exp__head">
+            <span class="exp__title">Chinese Society, University of York</span>
+            <span class="exp__role">President · Cultural Event Organiser</span>
+          </span>
+          <span class="exp__year">2024 — Now</span>
+          <span class="exp__icon" aria-hidden="true"></span>
+        </button>
+        <div class="exp__body">
+          <div class="exp__bodyin">
+            <div class="exp__text">
+              <p class="exp__sum">Leading cultural programming that moved from one-way presentation toward participation and shared experience.</p>
+              <ul class="exp__list">
+                <li>Led regular cultural events for students from diverse cultural backgrounds.</li>
+                <li>Shifted activities from one-way cultural presentation towards participatory workshops and shared experiences.</li>
+                <li>Organised a cuisine social with 50+ attendees and developed workshops including mooncake-making, calligraphy and Chinese dance experience sessions.</li>
+              </ul>
+              <div class="exp__meta"><span>Cultural Programming</span><span>50+ Attendees</span></div>
+            </div>
+            <figure class="exp__media" data-tilt>
+              <img src="assets/calligraphy.png" alt="Chinese calligraphy workshop" loading="lazy" />
+            </figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="exp__item" data-cursor="expand">
+        <button class="exp__bar" type="button">
+          <span class="exp__no">03</span>
+          <span class="exp__head">
+            <span class="exp__title">Studio Production</span>
+            <span class="exp__role">Production Roles · Screen Practice</span>
+          </span>
+          <span class="exp__year">2023 — Now</span>
+          <span class="exp__icon" aria-hidden="true"></span>
+        </button>
+        <div class="exp__body">
+          <div class="exp__bodyin">
+            <div class="exp__text">
+              <p class="exp__sum">Hands-on set roles building practical fluency in crew workflow and live production timing.</p>
+              <ul class="exp__list">
+                <li>Worked across camera operation, floor management and visual mixing.</li>
+                <li>Developed practical awareness of crew workflow, technical timing and on-set communication.</li>
+              </ul>
+              <div class="exp__meta"><span>Camera · Floor · Vision</span><span>On-set Practice</span></div>
+            </div>
+            <figure class="exp__media" data-tilt>
+              <img src="assets/crew.png" alt="Film crew on location" loading="lazy" />
+            </figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="exp__item" data-cursor="expand">
+        <button class="exp__bar" type="button">
+          <span class="exp__no">04</span>
+          <span class="exp__head">
+            <span class="exp__title">Photography Assistant · Visual Content</span>
+            <span class="exp__role">Portrait Studio &amp; School Media</span>
+          </span>
+          <span class="exp__year">2021 — Now</span>
+          <span class="exp__icon" aria-hidden="true"></span>
+        </button>
+        <div class="exp__body">
+          <div class="exp__bodyin">
+            <div class="exp__text">
+              <p class="exp__sum">Audience-facing image-making for a portrait studio and institutional social media.</p>
+              <ul class="exp__list">
+                <li>Worked as a photography assistant in a portrait studio.</li>
+                <li>Produced photographic content for school official social media accounts.</li>
+                <li>Developed visual judgement, communication with subjects and sensitivity to audience-facing image-making.</li>
+              </ul>
+              <div class="exp__meta"><span>Visual Content</span><span>Portraiture</span></div>
+            </div>
+            <figure class="exp__media" data-tilt>
+              <img src="assets/photographer.png" alt="Photographer at work" loading="lazy" />
+            </figure>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ░░ STATS ░░ -->
+  <section class="stats" aria-label="At a glance">
+    <div class="stats__row">
+      <div class="stat reveal">
+        <span class="stat__num" data-count="48" data-suffix="">0</span>
+        <span class="stat__lab">Hour film challenge coordinated</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat__num" data-count="50" data-suffix="+">0</span>
+        <span class="stat__lab">Attendees at a single cultural social</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat__num" data-count="2" data-suffix="">0</span>
+        <span class="stat__lab">Languages — Mandarin &amp; English</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat__num" data-count="2026" data-suffix="" data-plain>0</span>
+        <span class="stat__lab">Graduating &amp; open to opportunities</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ 03 · CAPABILITIES ░░ -->
+  <section class="sec sec--cap" id="capabilities">
+    <div class="sec__head">
+      <span class="tag reveal">(03) — Capabilities</span>
+      <h2 class="sec__title">
+        <span class="mline"><span>What I bring</span></span>
+        <span class="mline"><span>to a <em>production</em>.</span></span>
+      </h2>
+    </div>
+
+    <div class="cap">
+      <ol class="cap__list">
+        <li class="cap__row" data-cursor>
+          <span class="cap__no">01</span>
+          <h3>Producing &amp; Coordination</h3>
+          <p>Communication flows, workflow planning, briefings and scheduling that keep a production moving cleanly from brief to screening.</p>
+          <span class="cap__arrow" aria-hidden="true">↗</span>
+        </li>
+        <li class="cap__row" data-cursor>
+          <span class="cap__no">02</span>
+          <h3>Screen &amp; Visual Practice</h3>
+          <p>Hands-on craft across camera operation, floor management, visual mixing and photographic content for audience-facing work.</p>
+          <span class="cap__arrow" aria-hidden="true">↗</span>
+        </li>
+        <li class="cap__row" data-cursor>
+          <span class="cap__no">03</span>
+          <h3>Research &amp; Strategy</h3>
+          <p>Audience research, reception analysis and qualitative method that ground creative decisions in evidence rather than instinct.</p>
+          <span class="cap__arrow" aria-hidden="true">↗</span>
+        </li>
+        <li class="cap__row" data-cursor>
+          <span class="cap__no">04</span>
+          <h3>Creative Business</h3>
+          <p>Promotional planning, business plans, marketing strategy, finance and legal awareness applied to creative projects.</p>
+          <span class="cap__arrow" aria-hidden="true">↗</span>
+        </li>
+        <li class="cap__row" data-cursor>
+          <span class="cap__no">05</span>
+          <h3>Leadership &amp; Communication</h3>
+          <p>Bilingual hosting, team leadership and cultural programming for diverse, international audiences across contexts.</p>
+          <span class="cap__arrow" aria-hidden="true">↗</span>
+        </li>
+      </ol>
+
+      <aside class="cap__tools reveal">
+        <span class="tag tag--sm">Toolkit</span>
+        <div class="tools">
+          <span data-cursor>Canva</span>
+          <span data-cursor>CapCut</span>
+          <span data-cursor>Trello</span>
+          <span data-cursor>Slack</span>
+          <span data-cursor>Google Drive</span>
+          <span data-cursor>Google Forms</span>
+          <span data-cursor>NVivo</span>
+          <span data-cursor>Microsoft Office</span>
+        </div>
+        <p class="cap__note">Software for coordination, post-production, qualitative research and creative delivery.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ░░ HORIZONTAL FILM STRIP ░░ -->
+  <section class="strip" id="strip" data-strip>
+    <div class="strip__sticky">
+      <div class="strip__head">
+        <span class="tag">(✳) — In the Field</span>
+        <span class="strip__hint">Drag · Scroll →</span>
+      </div>
+      <div class="strip__track" data-strip-track>
+        <figure class="frame">
+          <div class="frame__img"><img src="assets/set.png" alt="Film set" loading="lazy" /></div>
+          <figcaption><i>01</i><b>The Set</b><em>Production environment</em></figcaption>
+        </figure>
+        <figure class="frame">
+          <div class="frame__img"><img src="assets/crew.png" alt="Crew on location" loading="lazy" /></div>
+          <figcaption><i>02</i><b>The Crew</b><em>Workflow &amp; timing</em></figcaption>
+        </figure>
+        <figure class="frame">
+          <div class="frame__img"><img src="assets/desk.png" alt="Production schedule" loading="lazy" /></div>
+          <figcaption><i>03</i><b>The Plan</b><em>Coordination</em></figcaption>
+        </figure>
+        <figure class="frame">
+          <div class="frame__img"><img src="assets/moodboard.png" alt="Mood board" loading="lazy" /></div>
+          <figcaption><i>04</i><b>The Board</b><em>Visual research</em></figcaption>
+        </figure>
+        <figure class="frame">
+          <div class="frame__img"><img src="assets/research.png" alt="Research desk" loading="lazy" /></div>
+          <figcaption><i>05</i><b>The Study</b><em>Reception &amp; method</em></figcaption>
+        </figure>
+        <figure class="frame">
+          <div class="frame__img"><img src="assets/calligraphy.png" alt="Calligraphy" loading="lazy" /></div>
+          <figcaption><i>06</i><b>The Craft</b><em>Cultural programming</em></figcaption>
+        </figure>
+        <figure class="frame">
+          <div class="frame__img"><img src="assets/dance.png" alt="Classical dance" loading="lazy" /></div>
+          <figcaption><i>07</i><b>The Stage</b><em>Performance</em></figcaption>
+        </figure>
+        <figure class="frame">
+          <div class="frame__img"><img src="assets/photographer.png" alt="Photographer" loading="lazy" /></div>
+          <figcaption><i>08</i><b>The Frame</b><em>Visual content</em></figcaption>
+        </figure>
+        <figure class="frame">
+          <div class="frame__img"><img src="assets/team.png" alt="Creative team" loading="lazy" /></div>
+          <figcaption><i>09</i><b>The Team</b><em>Collaboration</em></figcaption>
+        </figure>
+        <figure class="frame">
+          <div class="frame__img"><img src="assets/cinema.png" alt="Screening room" loading="lazy" /></div>
+          <figcaption><i>10</i><b>The Audience</b><em>Where it lands</em></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ 04 · RESEARCH ░░ -->
+  <section class="sec sec--research" id="research">
+    <div class="sec__head">
+      <span class="tag reveal">(04) — Research &amp; Projects</span>
+      <h2 class="sec__title">
+        <span class="mline"><span>Thinking, in</span></span>
+        <span class="mline"><span><em>practice</em>.</span></span>
+      </h2>
+    </div>
+
+    <article class="feat reveal" data-tilt>
+      <figure class="feat__media">
+        <img src="assets/study.png" alt="Film research study" loading="lazy" data-parallax data-speed="0.06" />
+        <span class="feat__badge">Final-Year Dissertation</span>
+      </figure>
+      <div class="feat__body">
+        <span class="feat__mono">FILM / RECEPTION STUDY</span>
+        <h3 class="feat__title">Crouching Tiger, Hidden Dragon <em>×</em> Shadow</h3>
+        <p class="feat__text">A comparative study of two landmarks of Chinese-language cinema — examining cultural legibility, audience reception, paratexts, subtitling and the circulation infrastructure that carries a film across international contexts. The project asks how meaning survives translation, and what is gained or lost as a story travels to new audiences.</p>
+        <div class="feat__tags">
+          <span>Cultural Legibility</span><span>Audience Reception</span><span>Paratexts</span><span>Subtitling</span><span>Circulation</span>
+        </div>
+      </div>
+    </article>
+
+    <div class="proj">
+      <article class="proj__card reveal" data-tilt data-cursor>
+        <figure class="proj__img"><img src="assets/moodboard.png" alt="Business planning" loading="lazy" /></figure>
+        <span class="proj__no">02</span>
+        <h3>Creative Industry Business Planning</h3>
+        <p>Completed projects in film-related promotional planning, creative industry business plans, marketing strategy, and finance and legal planning.</p>
+        <span class="proj__foot">Strategy · Marketing · Finance · Law</span>
+      </article>
+      <article class="proj__card reveal" data-tilt data-cursor>
+        <figure class="proj__img"><img src="assets/research.png" alt="Brand analysis" loading="lazy" /></figure>
+        <span class="proj__no">03</span>
+        <h3>Cultural Entertainment Brand Analysis</h3>
+        <p>Conducted brand analysis across cultural entertainment — including audience positioning, competitive context and business-model evaluation.</p>
+        <span class="proj__foot">Brand · Audience · Business Model</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- ░░ 05 · PERFORMANCE & LEADERSHIP ░░ -->
+  <section class="sec sec--light sec--lead" id="leadership">
+    <div class="sec__head">
+      <span class="tag reveal">(05) — Performance &amp; Leadership</span>
+      <h2 class="sec__title">
+        <span class="mline"><span>On stage, and</span></span>
+        <span class="mline"><span>in <em>charge</em>.</span></span>
+      </h2>
+    </div>
+
+    <div class="lead">
+      <figure class="lead__media reveal" data-tilt>
+        <img src="assets/dance.png" alt="Classical Chinese dance performance" loading="lazy" />
+        <figcaption>Chinese dance — staging &amp; coordination</figcaption>
+      </figure>
+      <ol class="time">
+        <li class="time__item reveal">
+          <span class="time__dot"></span>
+          <span class="time__when">Childhood — School</span>
+          <p>Studied dance from childhood and organised a dance competition in middle school — an early instinct for staging and coordination.</p>
+        </li>
+        <li class="time__item reveal">
+          <span class="time__dot"></span>
+          <span class="time__when">High School</span>
+          <p>Directed a high-school theatre production and led a new class with limited English proficiency to win second prize on campus.</p>
+        </li>
+        <li class="time__item reveal">
+          <span class="time__dot"></span>
+          <span class="time__when">High School</span>
+          <p>Served as a house leader, developing leadership, responsibility and the habit of bringing a team together toward a shared goal.</p>
+        </li>
+        <li class="time__item reveal">
+          <span class="time__dot"></span>
+          <span class="time__when">University</span>
+          <p>Active member of the university K-pop Dance Society and lead of Chinese dance experience sessions through the Chinese Society.</p>
+        </li>
+        <li class="time__item reveal">
+          <span class="time__dot"></span>
+          <span class="time__when">University</span>
+          <p>Bilingual host for a large Chinese New Year Gala by the York Chinese Students and Scholars Association — connected with the Education Section of the Chinese Consulate-General in Manchester.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ░░ CONTACT ░░ -->
+  <footer class="contact" id="contact">
+    <div class="contact__bg" aria-hidden="true">
+      <img src="assets/cinema.png" alt="" data-parallax data-speed="-0.1" />
+    </div>
+
+    <div class="contact__top">
+      <span class="tag reveal">(✳) — Contact</span>
+      <span class="contact__loc reveal"><i class="ping"></i> York, UK — <em id="clock2">––:––</em></span>
+    </div>
+
+    <h2 class="contact__cta">
+      <span class="mline"><span>Let's make</span></span>
+      <span class="mline"><span>something <em>worth</em></span></span>
+      <span class="mline"><span>watching.</span></span>
+    </h2>
+
+    <div class="contact__grid">
+      <button class="contact__mail" id="copyMail" type="button" data-cursor="copy" data-magnetic data-mail="wrk20050601@163.com">
+        <span class="contact__mailtag">Primary email</span>
+        <span class="contact__mailtext">wrk20050601@163.com</span>
+        <span class="contact__copy" id="copyState">Click to copy</span>
+      </button>
+      <div class="contact__cards">
+        <a class="contact__card" href="tel:+8615695230333" data-cursor>
+          <i>Phone</i><b>+86 156 9523 0333</b>
+        </a>
+        <div class="contact__card">
+          <i>Location</i><b>York, United Kingdom</b>
+        </div>
+        <div class="contact__card">
+          <i>Status</i><b>Open to 2026 opportunities</b>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact__base">
+      <div class="contact__mark" aria-hidden="true">Ruike Wu</div>
+      <div class="contact__legal">
+        <span>© <i id="year">2026</i> Ruike Wu</span>
+        <span>Screen Producing — Portfolio Vol. 01</span>
+        <a href="#top" data-cursor data-magnetic>Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
